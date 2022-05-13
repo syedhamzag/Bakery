@@ -1,0 +1,14 @@
+C:\Syed Hamza G\Projects\Bakery\Bakery.Models\Bakery.Models\bin\Debug\net6.0\Bakery.Model.deps.json
+C:\Syed Hamza G\Projects\Bakery\Bakery.Models\Bakery.Models\bin\Debug\net6.0\Bakery.Model.runtimeconfig.json
+C:\Syed Hamza G\Projects\Bakery\Bakery.Models\Bakery.Models\bin\Debug\net6.0\Bakery.Model.dll
+C:\Syed Hamza G\Projects\Bakery\Bakery.Models\Bakery.Models\bin\Debug\net6.0\ref\Bakery.Model.dll
+C:\Syed Hamza G\Projects\Bakery\Bakery.Models\Bakery.Models\bin\Debug\net6.0\Bakery.Model.pdb
+C:\Syed Hamza G\Projects\Bakery\Bakery.Models\Bakery.Models\obj\Debug\net6.0\Bakery.Model.csproj.AssemblyReference.cache
+C:\Syed Hamza G\Projects\Bakery\Bakery.Models\Bakery.Models\obj\Debug\net6.0\Bakery.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Syed Hamza G\Projects\Bakery\Bakery.Models\Bakery.Models\obj\Debug\net6.0\Bakery.Model.AssemblyInfoInputs.cache
+C:\Syed Hamza G\Projects\Bakery\Bakery.Models\Bakery.Models\obj\Debug\net6.0\Bakery.Model.AssemblyInfo.cs
+C:\Syed Hamza G\Projects\Bakery\Bakery.Models\Bakery.Models\obj\Debug\net6.0\Bakery.Model.csproj.CoreCompileInputs.cache
+C:\Syed Hamza G\Projects\Bakery\Bakery.Models\Bakery.Models\obj\Debug\net6.0\Bakery.Model.dll
+C:\Syed Hamza G\Projects\Bakery\Bakery.Models\Bakery.Models\obj\Debug\net6.0\ref\Bakery.Model.dll
+C:\Syed Hamza G\Projects\Bakery\Bakery.Models\Bakery.Models\obj\Debug\net6.0\Bakery.Model.pdb
+C:\Syed Hamza G\Projects\Bakery\Bakery.Models\Bakery.Models\obj\Debug\net6.0\Bakery.Model.genruntimeconfig.cache

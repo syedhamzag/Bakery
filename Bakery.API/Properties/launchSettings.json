@@ -1,0 +1,28 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:3438",
+      "sslPort": 44303
+    }
+  },
+  "profiles": {
+    "Bakery.API": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7011;http://localhost:5011",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

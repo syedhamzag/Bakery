@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="Refit" Version="4.6.107" />
+    <PackageReference Include="Refit.HttpClientFactory" Version="4.6.107" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bakery.DataTransferObject\Bakery.DataTransferObject.csproj" />
+    <ProjectReference Include="..\Bakery.MapperConfig\Bakery.MapperConfig.csproj" />
+    <ProjectReference Include="..\Bakery.Services\Bakery.Services.csproj" />
+  </ItemGroup>
+
+</Project>

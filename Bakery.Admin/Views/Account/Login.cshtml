@@ -1,0 +1,92 @@
+﻿@using Bakery.DataTransferObject.DTOs.Users
+@model PostUser
+@{
+	 ViewData["Title"] = "Login";
+    Layout = null;
+}
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+		
+		<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+		
+		<!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+		
+		<!-- Lineawesome CSS -->
+		<link rel="stylesheet" href="/assets/css/line-awesome.min.css">
+		
+		<!-- Main CSS -->
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <!-- Arabic and Urdu Font -->
+        <link rel="stylesheet" href="/css/font.css">
+</head>
+<body>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <!-- Account Logo -->
+					<div class="account-logo">
+						@*<a href="index.html"><img src="/assets/img/flags/pk.png" alt="Islah e Emaan"></a>*@
+					</div>
+					<!-- /Account Logo -->
+					
+					<div class="account-box">
+						<div class="account-wrapper">
+							<h3 class="account-title">Login</h3>
+							<p class="account-subtitle">Access to dashboard</p>
+							
+							<!-- Account Form -->
+							<form asp-action="Login">
+								<div class="form-group">
+									<label>Email Address</label>
+									<input class="form-control" type="text" asp-for="Email">
+								</div>
+								<div class="form-group">
+									<div class="row">
+										<div class="col">
+											<label>Password</label>
+										</div>
+										<div class="col-auto">
+											<a class="text-muted" href="#">
+												Forgot password?
+											</a>
+										</div>
+									</div>
+									<input class="form-control" type="password" asp-for="Password">
+								</div>
+								<div class="form-group text-center">
+									<button class="btn btn-primary account-btn" type="submit">Login</button>
+								</div>
+								<div class="account-footer">
+									<p>Don't have an account yet? <a asp-controller="User" asp-action="Index">Register</a></p>
+								</div>
+							</form>
+							<!-- /Account Form -->
+							
+						</div>
+					</div>
+        </main>
+    </div>
+
+        		<!-- jQuery -->
+        <script src="/assets/js/jquery-3.6.0.min.js"></script>
+		
+		<!-- Bootstrap Core JS -->
+        <script src="/assets/js/bootstrap.bundle.min.js"></script>
+		
+		<!-- Slimscroll JS -->
+		<script src="/assets/js/jquery.slimscroll.min.js"></script>
+		
+		<!-- Select2 JS -->
+		<script src="/assets/js/select2.min.js"></script>
+		
+		<!-- Task JS -->
+		<script src="/assets/js/task.js"></script>
+		
+		<!-- Custom JS -->
+		<script src="/assets/js/app.js"></script>
+</body>

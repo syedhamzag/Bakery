@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+		
+		<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+		
+		<!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+		
+		<!-- Lineawesome CSS -->
+		<link rel="stylesheet" href="/assets/css/line-awesome.min.css">
+		
+		<!-- Main CSS -->
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <!-- Arabic and Urdu Font -->
+        <link rel="stylesheet" href="/css/font.css">
+</head>
+<body>
+    <div class="page-wrapper">
+
+            <!-- Page Content -->
+            <div class="content container-fluid" id="main-content">
+
+                @await Component.InvokeAsync(nameof(Menu))
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="page-title">@ViewData["Title"]</h3>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item active">@ViewData["Title"]</li>
+                            </ul>
+                            @if (ViewData["Title"] != null)
+                            {
+                                if (ViewData["Title"].Equals("View Care Plan") || ViewData["Title"].Equals("Empty Log Book"))
+                                {
+                                    <button class="btn btn-primary" id="btnHide">Print</button>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+                @RenderBody()
+            </div>
+        </div>
+
+        		<!-- jQuery -->
+        <script src="/assets/js/jquery-3.6.0.min.js"></script>
+		
+		<!-- Bootstrap Core JS -->
+        <script src="/assets/js/bootstrap.bundle.min.js"></script>
+		
+		<!-- Slimscroll JS -->
+		<script src="/assets/js/jquery.slimscroll.min.js"></script>
+		
+		<!-- Select2 JS -->
+		<script src="/assets/js/select2.min.js"></script>
+		
+		<!-- Task JS -->
+		<script src="/assets/js/task.js"></script>
+		
+		<!-- Custom JS -->
+		<script src="/assets/js/app.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,11 @@
+C:\Syed Hamza G\Projects\Bakery\Bakery.DataTransferObject\bin\Debug\net6.0\Bakery.DataTransferObject.deps.json
+C:\Syed Hamza G\Projects\Bakery\Bakery.DataTransferObject\bin\Debug\net6.0\Bakery.DataTransferObject.dll
+C:\Syed Hamza G\Projects\Bakery\Bakery.DataTransferObject\bin\Debug\net6.0\ref\Bakery.DataTransferObject.dll
+C:\Syed Hamza G\Projects\Bakery\Bakery.DataTransferObject\bin\Debug\net6.0\Bakery.DataTransferObject.pdb
+C:\Syed Hamza G\Projects\Bakery\Bakery.DataTransferObject\obj\Debug\net6.0\Bakery.DataTransferObject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Syed Hamza G\Projects\Bakery\Bakery.DataTransferObject\obj\Debug\net6.0\Bakery.DataTransferObject.AssemblyInfoInputs.cache
+C:\Syed Hamza G\Projects\Bakery\Bakery.DataTransferObject\obj\Debug\net6.0\Bakery.DataTransferObject.AssemblyInfo.cs
+C:\Syed Hamza G\Projects\Bakery\Bakery.DataTransferObject\obj\Debug\net6.0\Bakery.DataTransferObject.csproj.CoreCompileInputs.cache
+C:\Syed Hamza G\Projects\Bakery\Bakery.DataTransferObject\obj\Debug\net6.0\Bakery.DataTransferObject.dll
+C:\Syed Hamza G\Projects\Bakery\Bakery.DataTransferObject\obj\Debug\net6.0\ref\Bakery.DataTransferObject.dll
+C:\Syed Hamza G\Projects\Bakery\Bakery.DataTransferObject\obj\Debug\net6.0\Bakery.DataTransferObject.pdb

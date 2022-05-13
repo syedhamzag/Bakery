@@ -1,0 +1,75 @@
+﻿@using Bakery.DataTransferObject.DTOs.Users
+@model PutUser
+@{
+    ViewData["Title"] = "Update";
+}
+<div class="account-logo">
+						@*<a href="index.html"><img src="assets/img/logo2.png" alt="Dreamguy's Technologies"></a>*@
+					</div>
+					<!-- /Account Logo -->
+					
+					<div class="account-box">
+						<div class="account-wrapper">
+							<h3 class="account-title">Register</h3>
+							<p class="account-subtitle">Access to our dashboard</p>
+							
+							<!-- Account Form -->
+							<form asp-action="Edit">
+								<input type="hidden" asp-for="UserId" />
+								<div class="form-group">
+									<label>Full Name</label>
+									<input asp-for="Name" class="form-control" type="text">
+								</div>
+								<div class="form-group">
+									<label>Mobile</label>
+									<input asp-for="Cell" class="form-control" type="text">
+								</div>
+								<div class="form-group">
+									<label>Email</label>
+									<input asp-for="Email" class="form-control" type="text">
+								</div>
+								<div class="form-group">
+									<label>Status</label>
+									<select class="form-control" asp-for="IsActive">
+										<option value="false">InActive</option>
+										<option value="true">Active</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label>Role</label>
+									<select class="form-control" asp-for="RoleId">
+										<option value="1">User</option>
+										<option value="2">Admin</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label>Password</label>
+									<input asp-for="Password" class="form-control" type="password">
+								</div>
+								<div class="form-group">
+									<label>Repeat Password</label>
+									<input id="repeatPassword" class="form-control" type="password" onchange="Repeat()">
+								</div>
+								<div class="form-group text-center">
+									<button id="btnSubmit" class="btn btn-primary account-btn" disabled="disabled" type="submit">Register</button>
+								</div>
+							</form>
+							<!-- /Account Form -->
+						</div>
+					</div>
+<script type="text/javascript">
+	function Repeat()
+	{
+		var repeat = document.getElementById('repeatPassword').value;
+		var pass = document.getElementById('Password').value;
+		var btn = document.getElementById('btnSubmit');
+		if(repeat == pass)
+		{
+			btn.removeAttribute("disabled","disabled");
+		}
+		else
+		{
+			btn.setAttribute("disabled","disabled");
+		}
+	}
+</script>

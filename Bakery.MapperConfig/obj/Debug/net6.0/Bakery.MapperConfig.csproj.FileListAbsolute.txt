@@ -1,0 +1,17 @@
+C:\Syed Hamza G\Projects\Bakery\Bakery.MapperConfig\bin\Debug\net6.0\Bakery.MapperConfig.deps.json
+C:\Syed Hamza G\Projects\Bakery\Bakery.MapperConfig\bin\Debug\net6.0\Bakery.MapperConfig.dll
+C:\Syed Hamza G\Projects\Bakery\Bakery.MapperConfig\bin\Debug\net6.0\ref\Bakery.MapperConfig.dll
+C:\Syed Hamza G\Projects\Bakery\Bakery.MapperConfig\bin\Debug\net6.0\Bakery.MapperConfig.pdb
+C:\Syed Hamza G\Projects\Bakery\Bakery.MapperConfig\bin\Debug\net6.0\Bakery.DataTransferObject.dll
+C:\Syed Hamza G\Projects\Bakery\Bakery.MapperConfig\bin\Debug\net6.0\Bakery.Model.dll
+C:\Syed Hamza G\Projects\Bakery\Bakery.MapperConfig\bin\Debug\net6.0\Bakery.DataTransferObject.pdb
+C:\Syed Hamza G\Projects\Bakery\Bakery.MapperConfig\bin\Debug\net6.0\Bakery.Model.pdb
+C:\Syed Hamza G\Projects\Bakery\Bakery.MapperConfig\obj\Debug\net6.0\Bakery.MapperConfig.csproj.AssemblyReference.cache
+C:\Syed Hamza G\Projects\Bakery\Bakery.MapperConfig\obj\Debug\net6.0\Bakery.MapperConfig.GeneratedMSBuildEditorConfig.editorconfig
+C:\Syed Hamza G\Projects\Bakery\Bakery.MapperConfig\obj\Debug\net6.0\Bakery.MapperConfig.AssemblyInfoInputs.cache
+C:\Syed Hamza G\Projects\Bakery\Bakery.MapperConfig\obj\Debug\net6.0\Bakery.MapperConfig.AssemblyInfo.cs
+C:\Syed Hamza G\Projects\Bakery\Bakery.MapperConfig\obj\Debug\net6.0\Bakery.MapperConfig.csproj.CoreCompileInputs.cache
+C:\Syed Hamza G\Projects\Bakery\Bakery.MapperConfig\obj\Debug\net6.0\Bakery.MapperConfig.csproj.CopyComplete
+C:\Syed Hamza G\Projects\Bakery\Bakery.MapperConfig\obj\Debug\net6.0\Bakery.MapperConfig.dll
+C:\Syed Hamza G\Projects\Bakery\Bakery.MapperConfig\obj\Debug\net6.0\ref\Bakery.MapperConfig.dll
+C:\Syed Hamza G\Projects\Bakery\Bakery.MapperConfig\obj\Debug\net6.0\Bakery.MapperConfig.pdb
