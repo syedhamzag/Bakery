@@ -1,7 +1,7 @@
-﻿using AlMuslimeen.Services.Services;
+﻿using Bakery.Services.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AlMuslimeen.Admin.Controllers
+namespace Bakery.Admin.Controllers
 {
     public class DashboardController : BaseController
     {
@@ -10,6 +10,8 @@ namespace AlMuslimeen.Admin.Controllers
         }
         public IActionResult Index()
         {
+            if(HttpContext.Session.GetString("Name") == null || HttpContext.Session.GetString("Name") == "") return RedirectToAction("Login","Account");
+            ViewData["Name"] = HttpContext.Session.GetString("Name");
             return View();
         }
     }

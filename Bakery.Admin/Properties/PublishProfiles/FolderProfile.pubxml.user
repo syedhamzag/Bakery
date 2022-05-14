@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\Syed Hamza G\Desktop\Upload Server\Web.Bakery</_PublishTargetUrl>
+    <History>True|2022-05-14T05:41:24.5460825Z;True|2022-05-13T14:55:05.0462130+05:00;True|2022-05-13T14:35:16.9895440+05:00;True|2022-05-13T11:52:48.9213248+05:00;</History>
+  </PropertyGroup>
+</Project>

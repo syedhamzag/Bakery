@@ -23,6 +23,7 @@ namespace Bakery.Admin.Controllers
         }
         public async Task<IActionResult> Reports()
         {
+            if (HttpContext.Session.GetString("Name") == null || HttpContext.Session.GetString("Name") == "") return RedirectToAction("Login", "Account");
             var reports = await _userService.Get();
             return View(reports);
         }
@@ -42,7 +43,7 @@ namespace Bakery.Admin.Controllers
             var result = await _userService.Post(post);
             var content = await result.Content.ReadAsStringAsync();
 
-            return RedirectToAction("Reports");
+            return RedirectToAction("Login", "Account");
         }
 
         public async Task<IActionResult> Edit(int userId)

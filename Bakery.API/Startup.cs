@@ -73,6 +73,12 @@ namespace Bakery.API
                 s.RoutePrefix = string.Empty;
             });
 
+            using (var serviceScope = app.ApplicationServices.CreateScope())
+            {
+                var context = serviceScope.ServiceProvider.GetService<BakeryDbContext>();
+                context!.Database.Migrate();
+            }
+
         }
     }
 }

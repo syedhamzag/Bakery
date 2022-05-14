@@ -2,4 +2,151 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+     ViewData["Title"] = "Dashboard";
 }
+<div class="row">
+    <div class="col-md-6 d-flex">
+        <div class="card flex-fill">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Evolution</h5>
+            </div>
+            <div class="card-body">
+
+                <canvas id="evolution"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 d-flex">
+        <div class="card flex-fill">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Staff</h5>
+            </div>
+            <div class="card-body">
+
+                <canvas id="StaffMetrics"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/StackedChart.js"></script>
+<script type="text/javascript">
+    var trackerColor = [
+                'rgba(220, 53, 69, 1)',
+                'rgba(0, 123, 255, 1)',
+                'rgba(255, 193, 7, 1)',
+                'rgba(73,112,182,1)',
+                'rgba(40, 167, 69, 1)'
+            ];
+            var clientColor = [
+                'rgba(255, 193, 7, 1)',
+                'rgba(40, 167, 69, 1)',
+                'rgba(220, 53, 69, 1)',
+                'rgba(0, 123, 255, 1)',
+                'rgba(73,112,182,1)',
+                'rgba(238, 124, 49, 1)',
+                'rgba(165, 165, 165, 1)',
+                'rgba(255, 193, 14, 1)',
+                'rgba(245, 173, 145, 1)',
+                'rgba(235, 153, 214, 1)'
+
+            ];
+            var chartStaff = "StaffMetrics";
+            var ctxStaff = document.getElementById(chartStaff).getContext('2d');
+
+            labels = ['IB','GERARD','JOSEPH','SIDIBE','MARIAM','OLIVIER','J.B','AUTRE LIVREUR','COMMANDE','GUICHET'];
+            data = [4968875,3741800,2911900,1368100,620300,234400,218200,16800,0,3505320];
+            var staff = {
+                                labels: labels,
+                                datasets: [{
+                                    label: "Chart",
+                                    backgroundColor: clientColor,
+                                    bordercolor: clientColor,
+                                    borderWidth: 0,
+                                    data: data
+                                }]
+                            };
+            var Staff = new Chart(ctxStaff, {
+                                options: {
+                                    scales: {
+                                        yAxes: [{
+                                            ticks: {
+                                                min: 0,
+                                                beginAtZero: true
+                                            },
+                                            gridLines: {
+                                                display: false,
+                                            }
+                                        }]
+                                    }
+                                },
+                                data: staff,
+                                type: 'pie'
+
+                            });
+
+                    var chartEvolution = "evolution";
+            
+            var ctxEvolution = document.getElementById(chartEvolution).getContext('2d');
+
+const trackEvolution = {
+                                labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+                                datasets: [
+                                    {
+                                        label: "Evolution CA Yeli  1",
+                                        data: [11514475,10036845,11438305,11559690,11532570,11992720,12983650,12024560,10399290,11124625,10081526,10938540],
+                                        borderColor: 'rgba(220, 53, 69, 1)',
+                                        tension: 0.1
+                                    },
+                                    {
+                                        label: "Evolution CA Yeli  2",
+                                        data: [7678550,6934175,7903725,7243450,6601375,6495300,8240475,5357050,4497900,5970025,6045775,6998875],
+                                        borderColor: 'rgba(0, 123, 255, 1)',
+                                        tension: 0.1
+                                    },
+                                    {
+                                        label: "Chiffre d'affaire Ouelle",
+                                        data: [4097095,0,0,0,0,0,0,0,0,0,0,0],
+                                        borderColor: 'rgba(255, 193, 7, 1)',
+                                        tension: 0.1
+                                    },
+                                    {
+                                        label: "Chiffre d'affaire Yakasse",
+                                        data: [7821260,6604265,7711240,7892410,8646970,6831475,6446410,6771900,6473035,6376525,6284220,0],
+                                        borderColor: 'rgba(73,112,182,1)',
+                                        tension: 0.1
+                                    },
+                                    {
+                                        label: "Chiffre d'affaire Cafetou",
+                                        data: [14772115,14603255,15347175,14687695,14859610,15264215,16243585,16153060,15003825,15458865,16620350,16793720],
+                                        borderColor: 'rgba(40, 167, 69, 1)',
+                                        tension: 0.1
+                                    }
+                                ]
+                            };
+                            var TrackerEvolution = new Chart(ctxEvolution, {
+                                data: trackEvolution,
+                                type: 'line',
+                                options: {
+                                    maintainAspectRatio: false,
+                                    legend: {
+                                        labels: {
+                                            fontColor: trackerColor
+                                        }
+                                    },
+                                    scales: {
+                                        yAxes: [{
+                                            ticks: {
+                                                min: 0,
+                                            },
+                                            gridLines: {
+                                                color: 'white'
+                                            }
+                                        }]
+                                    }
+                                }
+
+                            });
+</script>

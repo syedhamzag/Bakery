@@ -33,8 +33,14 @@ namespace Bakery.Admin.Controllers
             var user = users.Find(s => s.Email == model.Email && s.Password == pass && s.IsActive == true);
             if (user == null) return RedirectToAction("Login");
             {
+                HttpContext.Session.SetString("Name", user.Name!);
                 return RedirectToAction("Index", "Dashboard");
             }
+        }
+        public IActionResult LogOut()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login");
         }
         public IActionResult Upload()
         {

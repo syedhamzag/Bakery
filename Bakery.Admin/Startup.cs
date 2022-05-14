@@ -32,7 +32,7 @@ namespace Bakery.Admin
             services.AddScoped<IFileUpload, FileUpload>();
             services.AddControllersWithViews();
             services.AddHttpContextAccessor();
-            //services.AddTransient<AuthenticatedHttpClientHandler>();
+            services.AddSession();
 
             services.AddScoped<HttpClient>();
             AddRefitServices(services);
@@ -57,7 +57,7 @@ namespace Bakery.Admin
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseSession();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
